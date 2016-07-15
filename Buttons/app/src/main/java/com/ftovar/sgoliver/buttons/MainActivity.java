@@ -1,5 +1,6 @@
 package com.ftovar.sgoliver.buttons;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button vbtnSimpleButton;
     private TextView vlblMessage;
     private ToggleButton vbtnToggle;
+    private FloatingActionButton vFabButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         vbtnSimpleButton = (Button)findViewById(R.id.btnSimpleButton);
         vlblMessage = (TextView)findViewById(R.id.lblMessage);
         vbtnToggle = (ToggleButton)findViewById(R.id.btnToggle);
+        vFabButton = (FloatingActionButton) findViewById(R.id.fab);
 
         vbtnSimpleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        vFabButton.setBackgroundTintList(getResources().getColorStateList(R.color.colorPrimaryDark));
     }
 }
