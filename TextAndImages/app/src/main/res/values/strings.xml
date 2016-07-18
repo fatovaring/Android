@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Text And Images</string>
     <string name="test">Test</string>
+    <string name="test_text">Test text</string>
+    <string name="nombre_de_usuario">Nombre de Usuario</string>
+    <string name="action">Action</string>
+    <string name="bold">Bold</string>
+    <string name="html">Set HTML</string>
+    <string name="submit">Submit</string>
 </resources>
