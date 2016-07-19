@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/lytCheckbox">
         <RadioGroup
+            android:id="@+id/rdGroup"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -40,7 +41,8 @@
                 android:id="@+id/optUno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/option_1" />
+                android:text="@string/option_1"
+                android:checked="true"/>
             <RadioButton
                 android:id="@+id/optDos"
                 android:layout_width="wrap_content"
@@ -48,10 +50,23 @@
                 android:text="@string/option_2" />
         </RadioGroup>
 
-        <TextView
-
+        <GridLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/lblChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"/>
+            <TextView
+                android:id="@+id/lblClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click" />
+        </GridLayout>
     </LinearLayout>
 
 </RelativeLayout>
