@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Buttons</string>
+<<<<<<< HEAD
     <string name="off">Off</string>
     <string name="on">On</string>
     <string name="ok">Ok</string>
     <string name="text_text">Test Text:</string>
+=======
+    <string name="simple_button">Simple Button</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="star">Star</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+>>>>>>> origin/master
 </resources>

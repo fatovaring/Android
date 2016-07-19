@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -10,8 +11,55 @@
     tools:context="com.ftovar.sgoliver.buttons.MainActivity">
 
     <TextView
+        android:id="@+id/lblMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSimpleButton"
+        android:text="@string/simple_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/lblMessage" />
+
+    <ToggleButton
+        android:id="@+id/btnToggle"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSimpleButton"/>
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToggle"/>
+
+    <ImageButton
+        android:id="@+id/btnImage"
+        android:contentDescription="@string/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:layout_below="@id/btnSwitch"/>
+
+    <Button
+        android:id="@+id/btnButtonImage"
+        android:text="@string/star"
+        android:drawableLeft="@drawable/ic_star"
+        android:drawablePadding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnImage"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Hello World!" />
 
     <ToggleButton
@@ -45,4 +93,31 @@
             android:src="@drawable/ic_action_name"
             style="?android:borderlessButtonStyle" />
     </LinearLayout>
+=======
+        android:src="@drawable/ic_phones"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        android:layout_below="@id/btnButtonImage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aceptar"/>
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelar"/>
+    </LinearLayout>
+
+>>>>>>> origin/master
 </RelativeLayout>
